@@ -14,11 +14,13 @@ function App() {
   const [vacPosX, setVacPosX] = useState(5);
   const [vacPosY, setVacPosY] = useState(5);
   const [vacPosO, setVacPosO] = useState('N');
-
+  // je vais écouter les changements de coordonnées pour le robot et la grille, et appliquer un reload de l'ui lors des changements.
   useEffect(() => {
     setGridSize({ x: gridSizeX, y: gridSizeY });
     setVacPosition({ x: vacPosX, y: vacPosY, o: vacPosO });
   }, [gridSizeX, gridSizeY, vacPosX, vacPosY, vacPosO]);
+
+  //  Je crée mon application qui a 3 composants : Le formulaire de génération de la grille et de position initiale de Hoover, le formulaire d'ordres à donner à Hoover, et les résultats à afficher ensuite
   return (
     <AuthContext.Provider
       value={{
