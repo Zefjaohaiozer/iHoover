@@ -1,0 +1,132 @@
+html,
+body,
+.App {
+  margin: 0px;
+}
+body {
+  min-height: 100vh;
+  background-color: black;
+}
+.App {
+  text-align: center;
+  padding-top: 30px;
+  max-width: 1440px;
+  background-color: black;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: auto;
+}
+
+h1 {
+  margin: 0px;
+  padding-top: 25px;
+}
+.setUp {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 45%;
+}
+.inputFormDiv {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+  text-align: start;
+  width: 100%;
+}
+
+.inputForm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.inputForm p {
+  font-size: large;
+}
+.formInput {
+  width: 80%;
+  font-size: x-large;
+  height: 25px;
+  border: none;
+  height: 35px;
+  text-align: center;
+  padding: 0px;
+}
+
+.cleaningResult {
+  width: 45%;
+}
+.cleaningResult div {
+  border-radius: 25px;
+  width: 100%;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  margin-top: 25px;
+}
+.InfosEnvironnement {
+  text-align: start;
+  font-size: large;
+}
+.submitBtn {
+  margin-top: 30px;
+  border: none;
+  width: 80%;
+  font-size: x-large;
+  text-align: center;
+  height: 45px;
+  border-radius: 25px;
+}
+@media screen and (max-width: 994px) {
+  .App {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+  .inputFormDiv {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .inputForm {
+    display: flex;
+    flex-direction: column;
+  }
+  .setUp,
+  .cleaningResult {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    min-height: 0px;
+    height: fit-content;
+    margin: 0px;
+  }
+  .cleaningResult {
+    width: 80%;
+  }
+  .cleaningResult div {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .editVacuumInfoLabel,
+  .cleanFormLabel {
+    align-self: center;
+    width: 80%;
+  }
+  .formInput {
+    width: 100%;
+  }
+  .submitBtn {
+    align-self: center;
+  }
+}
